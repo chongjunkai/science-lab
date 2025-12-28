@@ -419,6 +419,97 @@
                 product: "Methane (CH₄)",
                 explanation: "C + 2H₂ → CH₄ - Carbon and hydrogen combine to form methane, the main component of natural gas!",
                 points: 300
+            },
+            {
+                objective: "Create hydrogen peroxide (H₂O₂) - a common disinfectant",
+                chemicals: [
+                    { name: "Hydrogen", formula: "H₂", color: "#FFE4E1" },
+                    { name: "Oxygen", formula: "O₂", color: "#ADD8E6" },
+                    { name: "Nitrogen", formula: "N₂", color: "#E6E6FA" },
+                    { name: "Carbon", formula: "C", color: "#808080" }
+                ],
+                solution: ["H₂", "O₂"],
+                product: "Hydrogen Peroxide (H₂O₂)",
+                explanation: "H₂ + O₂ → H₂O₂ - Used as a disinfectant and bleaching agent!",
+                points: 350
+            },
+            {
+                objective: "Create sulfuric acid (H₂SO₄) - one of the most important industrial chemicals",
+                chemicals: [
+                    { name: "Hydrogen", formula: "H₂", color: "#FFE4E1" },
+                    { name: "Sulfur", formula: "S", color: "#FFFF99" },
+                    { name: "Oxygen", formula: "O₂", color: "#ADD8E6" },
+                    { name: "Nitrogen", formula: "N₂", color: "#E6E6FA" }
+                ],
+                solution: ["H₂", "S", "O₂", "O₂"],
+                product: "Sulfuric Acid (H₂SO₄)",
+                explanation: "H₂ + S + 2O₂ → H₂SO₄ - Used in batteries, fertilizers, and many industrial processes!",
+                points: 400
+            },
+            {
+                objective: "Create nitrogen dioxide (NO₂) - a reddish-brown toxic gas",
+                chemicals: [
+                    { name: "Nitrogen", formula: "N₂", color: "#E6E6FA" },
+                    { name: "Oxygen", formula: "O₂", color: "#ADD8E6" },
+                    { name: "Hydrogen", formula: "H₂", color: "#FFE4E1" },
+                    { name: "Carbon", formula: "C", color: "#808080" }
+                ],
+                solution: ["N₂", "O₂", "O₂"],
+                product: "Nitrogen Dioxide (NO₂)",
+                explanation: "N₂ + 2O₂ → 2NO₂ - A pollutant produced by combustion engines!",
+                points: 450
+            },
+            {
+                objective: "Create calcium carbonate (CaCO₃) - the main component of limestone and shells",
+                chemicals: [
+                    { name: "Calcium", formula: "Ca", color: "#F0E68C" },
+                    { name: "Carbon", formula: "C", color: "#808080" },
+                    { name: "Oxygen", formula: "O₂", color: "#ADD8E6" },
+                    { name: "Hydrogen", formula: "H₂", color: "#FFE4E1" }
+                ],
+                solution: ["Ca", "C", "O₂"],
+                product: "Calcium Carbonate (CaCO₃)",
+                explanation: "Ca + C + O₂ → CaCO₃ - Found in rocks, pearls, and seashells!",
+                points: 500
+            },
+            {
+                objective: "Create ethanol (C₂H₅OH) - alcohol found in beverages",
+                chemicals: [
+                    { name: "Carbon", formula: "C", color: "#808080" },
+                    { name: "Hydrogen", formula: "H₂", color: "#FFE4E1" },
+                    { name: "Oxygen", formula: "O₂", color: "#ADD8E6" },
+                    { name: "Nitrogen", formula: "N₂", color: "#E6E6FA" }
+                ],
+                solution: ["C", "C", "H₂", "H₂", "H₂", "O₂"],
+                product: "Ethanol (C₂H₅OH)",
+                explanation: "2C + 3H₂ + O₂ → C₂H₅OH - Used in beverages, fuel, and as a solvent!",
+                points: 550
+            },
+            {
+                objective: "Create glucose (C₆H₁₂O₆) - the sugar that fuels life",
+                chemicals: [
+                    { name: "Carbon", formula: "C", color: "#808080" },
+                    { name: "Hydrogen", formula: "H₂", color: "#FFE4E1" },
+                    { name: "Oxygen", formula: "O₂", color: "#ADD8E6" },
+                    { name: "Nitrogen", formula: "N₂", color: "#E6E6FA" }
+                ],
+                solution: ["C", "C", "C", "C", "C", "C", "H₂", "H₂", "H₂", "H₂", "H₂", "H₂", "O₂", "O₂", "O₂"],
+                product: "Glucose (C₆H₁₂O₆)",
+                explanation: "6C + 6H₂ + 3O₂ → C₆H₁₂O₆ - The primary energy source for cells, created by photosynthesis!",
+                points: 600
+            },
+            {
+                objective: "Create nitric acid (HNO₃) - used in fertilizers and explosives",
+                chemicals: [
+                    { name: "Hydrogen", formula: "H₂", color: "#FFE4E1" },
+                    { name: "Nitrogen", formula: "N₂", color: "#E6E6FA" },
+                    { name: "Oxygen", formula: "O₂", color: "#ADD8E6" },
+                    { name: "Sulfur", formula: "S", color: "#FFFF99" }
+                ],
+                solution: ["H₂", "N₂", "O₂", "O₂", "O₂"],
+                product: "Nitric Acid (HNO₃)",
+                explanation: "H₂ + N₂ + 3O₂ → 2HNO₃ - A strong acid used in making fertilizers and explosives!",
+                points: 650
             }
         ];
         
@@ -579,7 +670,14 @@
                 'Table Salt (NaCl)': 'linear-gradient(to bottom, #FFF9C4, #FFFFFF)',
                 'Carbon Dioxide (CO₂)': 'linear-gradient(to bottom, #E0E0E0, #BDBDBD)',
                 'Ammonia (NH₃)': 'linear-gradient(to bottom, #F3E5F5, #E1BEE7)',
-                'Methane (CH₄)': 'linear-gradient(to bottom, #FFF3E0, #FFE0B2)'
+                'Methane (CH₄)': 'linear-gradient(to bottom, #FFF3E0, #FFE0B2)',
+                'Hydrogen Peroxide (H₂O₂)': 'linear-gradient(to bottom, #E1F5FE, #B3E5FC)',
+                'Sulfuric Acid (H₂SO₄)': 'linear-gradient(to bottom, #FFEB3B, #FDD835)',
+                'Nitrogen Dioxide (NO₂)': 'linear-gradient(to bottom, #FFCCBC, #FF8A65)',
+                'Calcium Carbonate (CaCO₃)': 'linear-gradient(to bottom, #F5F5F5, #E0E0E0)',
+                'Ethanol (C₂H₅OH)': 'linear-gradient(to bottom, #FFF8E1, #FFECB3)',
+                'Glucose (C₆H₁₂O₆)': 'linear-gradient(to bottom, #FFF9C4, #FFF59D)',
+                'Nitric Acid (HNO₃)': 'linear-gradient(to bottom, #FFECB3, #FFD54F)'
             };
             return colors[product] || '#90CAF9';
         }
